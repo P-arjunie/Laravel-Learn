@@ -1,0 +1,13 @@
+# Node modules for frontend
+frontend/node_modules/
+
+# Laravel-specific files
+# backend/vendor/
+# backend/storage/
+
+# Environment files
+# *.env
+
+# OS files
+.DS_Store
+Thumbs.db
