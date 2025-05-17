@@ -10,7 +10,8 @@ import ProfileUpdate from './components/Auth/ProfileUpdate';
 import PrivateRoute from './components/PrivateRoute'; // Import PrivateRoute
 import Navbar from './components/Navbar'; // Import Navbar
 import MyLearningPage from './components/Auth/MyLearning';
-
+import Footer from './components/Footer';
+import HomePage from './components/Home';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/courses" element={<CourseList />} />
           <Route path="/my-learning" element={<MyLearningPage />} />
+          <Route path="/home" element={<HomePage />} />
           {/* Admin Routes */}
           <Route
             path="/admin"
@@ -51,6 +53,7 @@ const App = () => {
             }
           />
         </Routes>
+        <Footer/>
       </AuthProvider>
     </Router>
   );
